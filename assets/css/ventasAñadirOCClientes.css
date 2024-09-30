@@ -1,0 +1,9 @@
+.table-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.table-group > * {
+  flex: 1;
+}
+

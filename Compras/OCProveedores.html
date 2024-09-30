@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>FIGsacUpdated2</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/Satoshi.css">
+    <link rel="stylesheet" href="../assets/css/bs-theme-overrides-1.css">
+    <link rel="stylesheet" href="../assets/css/admin_dashboard.css">
+    <link rel="stylesheet" href="../assets/css/comprasReq.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/sidebar.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="../assets/css/generalStructure.css">
+    <link rel="stylesheet" href="../assets/css/historial.css">
+    <link rel="stylesheet" href="../assets/css/Login-Form-Basic-icons.css">
+<script src="https://facilinsumos.com/sistemas/AdminDash/webapp/assets/js/compras_OCProveedores.js"></script>
+</head>
+
+<body>
+    <div id="nav-group">
+        <nav id="sidebar" class="nav-group-item"><a id="logo-holder" href="https://facilinsumos.com/sistemas/AdminDash/webapp/Inicio.html"><img id="logo-collapsed" class="logo" src="https://facilinsumos.com/sistemas/AdminDash/webapp/assets/img/logo-collapsed.png" alt="Logo Collapsed"><img id="logo-expanded" class="logo" src="https://facilinsumos.com/sistemas/AdminDash/webapp/assets/img/logo-expanded-inverted.png" alt="Logo Expanded"></a>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link active" href="https://facilinsumos.com/sistemas/AdminDash/webapp/Requerimientos.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-rocket">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3"></path>
+                            <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3"></path>
+                            <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                        </svg><span class="menu-text">Requerimientos</span></a></li>
+                <li class="nav-item"><a class="nav-link active" href="https://facilinsumos.com/sistemas/AdminDash/webapp/Administracion.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-report-money">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path>
+                            <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
+                            <path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"></path>
+                            <path d="M12 17v1m0 -8v1"></path>
+                        </svg><span class="menu-text"> Administración</span></a></li>
+                <li class="nav-item"><a class="nav-link active" href="https://facilinsumos.com/sistemas/AdminDash/webapp/Ventas.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-pig-money">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M15 11v.01"></path>
+                            <path d="M5.173 8.378a3 3 0 1 1 4.656 -1.377"></path>
+                            <path d="M16 4v3.803a6.019 6.019 0 0 1 2.658 3.197h1.341a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-1.342c-.336 .95 -.907 1.8 -1.658 2.473v2.027a1.5 1.5 0 0 1 -3 0v-.583a6.04 6.04 0 0 1 -1 .083h-4a6.04 6.04 0 0 1 -1 -.083v.583a1.5 1.5 0 0 1 -3 0v-2l0 -.027a6 6 0 0 1 4 -10.473h2.5l4.5 -3h0z"></path>
+                        </svg><span class="menu-text"> Ventas</span></a></li>
+                <li class="nav-item"><a class="nav-link active" href="https://facilinsumos.com/sistemas/AdminDash/webapp/Compras.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-shopping-cart-bolt">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                            <path d="M13.5 17h-7.5v-14h-2"></path>
+                            <path d="M6 5l14 1l-.858 6.004m-2.642 .996h-10.5"></path>
+                            <path d="M19 16l-2 3h4l-2 3"></path>
+                        </svg><span class="menu-text"> Compras</span></a></li>
+                <li class="nav-item"><a class="nav-link active" href="https://facilinsumos.com/sistemas/AdminDash/webapp/Logistica.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-truck-delivery">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                            <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                            <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"></path>
+                            <path d="M3 9l4 0"></path>
+                        </svg><span class="menu-text"> Logística</span></a></li>
+                <li class="nav-item"><a class="nav-link active" href="https://lookerstudio.google.com/reporting/3a18945d-ae7e-4531-8a00-c49a01fb8ef3" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chart-bar">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M3 12m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                            <path d="M9 8m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                            <path d="M15 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                            <path d="M4 20l14 0"></path>
+                        </svg><span class="menu-text"> Resultados</span></a></li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link active" href="https://chat.whatsapp.com/EvCiP54tulY3dvOj6gf7j9" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-settings">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
+                            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                        </svg><span class="menu-text"> Configuración</span></a></li>
+                <li class="nav-item"><a class="nav-link active" href="https://chat.whatsapp.com/EvCiP54tulY3dvOj6gf7j9" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-help">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                            <path d="M12 17l0 .01"></path>
+                            <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4"></path>
+                        </svg><span class="menu-text"> Ayuda</span></a></li>
+                <li class="nav-item"><a class="nav-link active" onclick="logoutUser()"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-logout">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                            <path d="M9 12h12l-3 -3"></path>
+                            <path d="M18 15l3 -3"></path>
+                        </svg><span class="menu-text"> Cerrar Sesión</span></a></li>
+            </ul>
+        </nav>
+        <div id="overlay" class="nav-group-item"></div>
+    </div>
+    <div id="page-wraper">
+        <div id="top-menu" class="buttons">
+            <h3 id="page-title">Compras: OC proveedores</h3>
+        </div>
+        <div id="content" class="content-column">
+            <div class="tarjeta row-direction">
+                <div>
+                    <h6 id="selectReq">OC Cliente:</h6><select>
+                        <option value="13">Req 224-2024: numero de OC</option>
+                        <option value="14">This is item 3</option>
+                    </select>
+                </div>
+                <div>
+                    <h6>Buscar:</h6>
+                    <div class="input-div search"><input type="search" id="input-search-1" class="search-input" autocomplete="on" placeholder="Introduce palabras clave separadas por ;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                            <path d="M21 21l-6 -6"></path>
+                        </svg></div>
+                </div>
+                <div>
+                    <h6>Fecha inicial:</h6>
+                    <div class="input-div"><input id="input-fecha1" class="date-input" type="date"></div>
+                </div>
+                <div>
+                    <h6>Fecha final:</h6>
+                    <div class="input-div"><input id="input-fecha2" class="date-input" type="date"></div>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <h4 id="tituloOCProveedores">OC proveedores:&nbsp;<span id="countOCProveedores">n</span></h4>
+                <div class="table-responsive" id="tblOrdenes">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Acciones</th>
+                                <th>Proveedor</th>
+                                <th>Contacto proveedor</th>
+                                <th>Numero</th>
+                                <th>Correo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="info-even-row max-height"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-mail oc-icon envio-cliente">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
+                                            <path d="M3 7l9 6l9 -6"></path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-zoom-money oc-icon abonos">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                                            <path d="M21 21l-6 -6"></path>
+                                            <path d="M12 7h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"></path>
+                                            <path d="M10 13v1m0 -8v1"></path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-clock-bolt oc-icon tiempo-entrega">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M20.984 12.53a9 9 0 1 0 -7.552 8.355"></path>
+                                            <path d="M12 7v5l3 3"></path>
+                                            <path d="M19 16l-2 3h4l-2 3"></path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-truck-delivery oc-icon logistica">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                            <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                            <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"></path>
+                                            <path d="M3 9l4 0"></path>
+                                        </svg></div>
+                                </td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="info-even-row max-height"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-mail oc-icon envio-cliente">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
+                                            <path d="M3 7l9 6l9 -6"></path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-zoom-money oc-icon abonos">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                                            <path d="M21 21l-6 -6"></path>
+                                            <path d="M12 7h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"></path>
+                                            <path d="M10 13v1m0 -8v1"></path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-clock-bolt oc-icon tiempo-entrega">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M20.984 12.53a9 9 0 1 0 -7.552 8.355"></path>
+                                            <path d="M12 7v5l3 3"></path>
+                                            <path d="M19 16l-2 3h4l-2 3"></path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-truck-delivery oc-icon logistica">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                            <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                            <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"></path>
+                                            <path d="M3 9l4 0"></path>
+                                        </svg></div>
+                                </td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="info-even-row max-height"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-mail oc-icon envio-cliente">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
+                                            <path d="M3 7l9 6l9 -6"></path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-zoom-money oc-icon abonos">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                                            <path d="M21 21l-6 -6"></path>
+                                            <path d="M12 7h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"></path>
+                                            <path d="M10 13v1m0 -8v1"></path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-clock-bolt oc-icon tiempo-entrega">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M20.984 12.53a9 9 0 1 0 -7.552 8.355"></path>
+                                            <path d="M12 7v5l3 3"></path>
+                                            <path d="M19 16l-2 3h4l-2 3"></path>
+                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-truck-delivery oc-icon logistica">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                            <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                            <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"></path>
+                                            <path d="M3 9l4 0"></path>
+                                        </svg></div>
+                                </td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="tarjetaDetalles" class="tarjeta content-column">
+                <div class="card-title-group">
+                    <h4>Detalles de orden de compra</h4>
+                    <div class="corner-group"><button class="btn" id="btnCancelarOC" type="button">Cancelar</button><button class="btn btn-primary" id="btnGuardarOC" type="button">Guardar</button><button class="btn b" id="btnEditarOC" type="button">Editar</button></div>
+                </div>
+                <div class="info-row">
+                    <div class="info-detail">
+                        <h6>ID:</h6>
+                        <p id="ocID" class="align-right">5</p>
+                    </div>
+                    <div class="info-detail">
+                        <h6>Número OC:</h6>
+                        <p id="ocNumero" class="align-right">OCb748a358-0908260724</p>
+                    </div>
+                    <div class="info-detail">
+                        <h6>Estado</h6><select id="ocEstado">
+                            <option value="Entregada">Entregada</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-detail">
+                        <h6>Garantia:</h6><input type="text" id="ocGarantia" value="1 año">
+                    </div>
+                    <div class="info-detail">
+                        <h6>Lugar de entrega:</h6><select id="ocLugarEntrega">
+                            <option value="Entregada">Tapytop SAC: Jr. Tacna Mza. 4a Lote. 1b Tablada de Lurin. VMT ()</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-detail">
+                        <h6>Fecha de registro</h6>
+                        <p id="ocFechaRegistro" class="align-right">24/7/2024 18:18:00</p>
+                    </div>
+                    <div class="info-detail">
+                        <h6>Fecha de pedido:</h6>
+                        <p id="ocFechaPedido" class="align-right">24/7/2024 18:18:00</p>
+                    </div>
+                    <div class="info-detail">
+                        <h6>OC entregada:</h6><input id="ocEntregada" type="date">
+                    </div>
+                </div><a id="ocPDF" class="link-p" href="#">
+                    <h6>OC PDF</h6>
+                </a>
+                <div class="info-row">
+                    <div class="info-detail">
+                        <h6>Moneda:</h6>
+                        <p id="ocMoneda" class="align-right">Soles</p>
+                    </div>
+                    <div class="info-detail">
+                        <h6>Valor sin IGV:</h6>
+                        <p id="ocValor" class="align-right">1,377.10</p>
+                    </div>
+                    <div class="info-detail">
+                        <h6>IGV:</h6>
+                        <p id="ocIGV" class="align-right">1,377.10</p>
+                    </div>
+                </div>
+                <div class="info-detail">
+                    <h6 id="ocAbonosTitulo">Abonos:&nbsp;<span id="countAbonos">n</span></h6><button class="btn" id="btnNuevoAbono" type="button">Solicitar abonos</button>
+                </div>
+                <div class="table-responsive" id="tblAbonos">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Descripción</th>
+                                <th>Valor sin IGV</th>
+                                <th>IGV</th>
+                                <th>Fecha vencimiento</th>
+                                <th>Factura</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="info-detail">
+                    <h6 id="ocFacturasTitulo">Facturas:&nbsp;<span id="countFacturas">n</span></h6><button class="btn" id="btnNuevaFactura" type="button">Añadir factura</button>
+                </div>
+                <div class="table-responsive" id="tblFacturas">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Numero de Factura</th>
+                                <th>Fecha de emisión</th>
+                                <th>Monto sin IGV</th>
+                                <th>IGV</th>
+                                <th>Moneda</th>
+                                <th>Factura PDF</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="info-detail">
+                    <h6>Productos:&nbsp;<span id="countProductos">n</span></h6><button class="btn" id="btnTodosLogistica" type="button">Añadir todos a logistica</button>
+                </div>
+                <div class="info-even-row border" style="padding: 16px;">
+                    <div>
+                        <h6>Descripción producto proveedor 1</h6>
+                        <div class="info-detail">
+                            <h6>Oferta:</h6>
+                            <p id="ocMoneda-1" class="align-right">ID</p>
+                        </div>
+                        <div class="info-detail">
+                            <h6>Cantidad:</h6>
+                            <p id="ocMoneda-2" class="align-right">cantidad unidad</p>
+                        </div>
+                        <div class="info-detail">
+                            <h6>Fecha de entrega:</h6>
+                            <p id="ocMoneda-3" class="align-right">24/7/2024 </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info-detail">
+                            <h6>En logistica:</h6><button class="btn" type="button">Agregar a logística</button>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Cantidad</th>
+                                        <th>Destino final </th>
+                                        <th>Observación </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-even-row border" style="padding: 16px;">
+                    <div>
+                        <h6>Descripción producto proveedor 2</h6>
+                        <div class="info-detail">
+                            <h6>Oferta:</h6>
+                            <p id="ocMoneda-4" class="align-right">ID</p>
+                        </div>
+                        <div class="info-detail">
+                            <h6>Cantidad:</h6>
+                            <p id="ocMoneda-5" class="align-right">cantidad unidad</p>
+                        </div>
+                        <div class="info-detail">
+                            <h6>Fecha de entrega:</h6>
+                            <p id="ocMoneda-6" class="align-right">24/7/2024 </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info-detail">
+                            <h6>En logistica:</h6><button class="btn" type="button">Agregar a logística</button>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Cantidad</th>
+                                        <th>Destino final </th>
+                                        <th>Observación </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="card-title-group">
+                    <h4>Revisar precios:&nbsp;<span id="countRevision">n</span></h4><button class="btn" id="btnGenerarOC" type="button">Generar OC</button>
+                </div>
+                <div class="table-responsive" id="tblRevisarPrecios">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Detalles de producto solicitado</th>
+                                <th>Descripción producto proveedor</th>
+                                <th>Proveedor</th>
+                                <th>Imagen ref</th>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>U. medida</th>
+                                <th>Cantidad</th>
+                                <th>Costo x unidad SIN IGV (S/.)</th>
+                                <th>Precio de venta SIN IGV (S/.)</th>
+                                <th>Link</th>
+                                <th>Ficha tecnica</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nombre de producto (max 50 characters) marca, modelo U.medida, cantidad, categoria</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre de producto (max 50 characters) marca, modelo U.medida, cantidad, categoria</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre de producto (max 50 characters) marca, modelo U.medida, cantidad, categoria</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="historialGrupo">
+        <div id="historialContent" class="tarjeta">
+            <div id="historialIzquierda">
+                <div id="searchHeader">
+                    <h6>Historial</h6>
+                    <div class="input-div search"><input type="search" id="inputSearchHistorial" class="search-input" autocomplete="on"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                            <path d="M21 21l-6 -6"></path>
+                        </svg></div>
+                </div>
+                <div class="table-responsive" id="tblHistorial">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Elemento</th>
+                                <th>tabla</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="info-even-row">
+                                        <h6>Elemento</h6><span class="align-right text-muted">dd mmm</span>
+                                    </div><span>Nombre : comentario ...</span>
+                                </td>
+                                <td>Cell 2</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="historialDerecha">
+                <div class="card-title-group">
+                    <h5 id="historialTitulo">Elemento...</h5>
+                    <div class="corner-group"><button class="btn btn-icon" id="btnInfoHistoril" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-info-circle">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                                <path d="M12 9h.01"></path>
+                                <path d="M11 12h1v4h1"></path>
+                            </svg></button><button class="btn btn-icon" id="btnCerrarHistorial" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-x">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M18 6l-12 12"></path>
+                                <path d="M6 6l12 12"></path>
+                            </svg></button></div>
+                </div>
+                <ul class="list-group" id="historial">
+                    <li class="list-group-item usuarioMovimiento">
+                        <p>15/ 08 / 2024</p>
+                        <p>Usuario 1 creo elemento</p>
+                    </li>
+                    <li class="list-group-item usuarioComentario">
+                        <div class="info-even-row">
+                            <h6>Nombre de usuario:</h6><span class="align-right text-muted">18:14</span>
+                        </div><span>Comentario</span>
+                    </li>
+                    <li class="list-group-item usuarioComentario">
+                        <div class="info-even-row">
+                            <h6>Nombre de usuario:</h6><span class="align-right text-muted">18:14</span>
+                        </div><span>Comentario</span>
+                    </li>
+                    <li class="list-group-item usuarioComentario">
+                        <div class="info-even-row">
+                            <h6>Nombre de usuario:</h6><span class="align-right text-muted">18:14</span>
+                        </div><span>Comentario</span>
+                    </li>
+                    <li class="list-group-item usuarioComentario">
+                        <div class="info-even-row">
+                            <h6>Nombre de usuario:</h6><span class="align-right text-muted">18:14</span>
+                        </div><span>Comentario</span>
+                    </li>
+                    <li class="list-group-item usuarioMovimiento"><span>Usuario 2 cambió precios en productos 1, 2 3 y lorem ipsum</span></li>
+                    <li class="list-group-item usuarioComentario">
+                        <div class="info-even-row">
+                            <h6>Nombre de usuario:</h6><span class="align-right text-muted">18:14</span>
+                        </div><span>Comentario</span>
+                    </li>
+                </ul>
+                <div id="userForm" class="info-row"><input type="text" id="inputComentario"><button class="btn" id="btnHistorial" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-send">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M10 14l11 -11"></path>
+                            <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"></path>
+                        </svg></button></div>
+            </div>
+        </div><button class="btn btnHistorial" id="historialCircle" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-message-circle-2-filled" id="hisorialIcon">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M5.821 4.91c3.898 -2.765 9.469 -2.539 13.073 .536c3.667 3.127 4.168 8.238 1.152 11.897c-2.842 3.447 -7.965 4.583 -12.231 2.805l-.232 -.101l-4.375 .931l-.075 .013l-.11 .009l-.113 -.004l-.044 -.005l-.11 -.02l-.105 -.034l-.1 -.044l-.076 -.042l-.108 -.077l-.081 -.074l-.073 -.083l-.053 -.075l-.065 -.115l-.042 -.106l-.031 -.113l-.013 -.075l-.009 -.11l.004 -.113l.005 -.044l.02 -.11l.022 -.072l1.15 -3.451l-.022 -.036c-2.21 -3.747 -1.209 -8.392 2.411 -11.118l.23 -.168z" stroke-width="0" fill="currentColor"></path>
+            </svg></button>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.input-div.search {
+  flex-grow: 1;
+}
+
+#top-menu {
+  gap: 1rem;
+}
+
+.date-input {
+  width: fit-content;
+}
+
+.btn-group {
+  width: 100%;
+}
+
+#divMVV, #divFlujo {
+  display: none !important;
+}
+
+#content {
+  height: 100vh;
+}
+
+.info-even-row.todo {
+  height: 100%;
+}
+
