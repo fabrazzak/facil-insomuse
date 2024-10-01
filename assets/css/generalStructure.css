@@ -9,8 +9,7 @@
   padding: 18px 56px;
   border-bottom: 1px solid var(--dark3);
   width: 100%;
-  /*position: fixed;*/
-  z-index: 1;
+  /*position: fixed;*/ 
   display: flex;
   justify-content: space-between;
 }
@@ -19,7 +18,7 @@
   display: flex;
   flex-direction: column;
   left: 5rem;
-  width: calc(100vw - 5rem);
+  width: calc(100% - 5rem);
 }
 
 #page-wrapper > * {
@@ -28,7 +27,7 @@
 
 body {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 

@@ -62,10 +62,19 @@
 .table {
   width: 100%;
   text-align: center;
+  border:1px solid #e5e1e190;
+ 
+ 
 }
 
 .table th, .table td {
   vertical-align: middle;
+background: rgb(206, 212, 240);
+ 
+}
+
+.table tbody td  {
+  background:  white;
 }
 
 /* Button Link Styling */
@@ -151,7 +160,7 @@
   flex: 1;
   padding: 0;
   margin-left: 70px;
-  width: calc(100vw - 70px);
+  width: calc(100% - 70px);
 }
 
 .main-section {
@@ -391,7 +400,7 @@ h3 {
 thead {
   position: sticky;
   top: 0;
-  z-index: 1;
+
   background-color: var(--white) !important;
 }
 

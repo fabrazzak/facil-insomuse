@@ -75,6 +75,8 @@
   background-color: var(--bs-primary);
   padding: 1.5rem;
   width: fit-content;
+  transition: all 200ms ease-in-out;
+ 
 }
 
 #sidebar:hover .nav-link {
@@ -96,6 +98,9 @@
 
 #sidebar:hover ~ #overlay {
   display: block;
+  background: #aeaaaa6e; 
+  transition: all 5000ms ease-in;
+
 }
 
 /* Hover buttons */
