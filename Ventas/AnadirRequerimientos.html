@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>FIGsacUpdated2</title>
+    <title>FIGsacUpdated2 (copy)</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/Satoshi.css">
     <link rel="stylesheet" href="../assets/css/bs-theme-overrides-1.css">
@@ -18,47 +18,70 @@
     <link rel="stylesheet" href="../assets/css/generalStructure.css">
     <link rel="stylesheet" href="../assets/css/historial.css">
     <link rel="stylesheet" href="../assets/css/Login-Form-Basic-icons.css">
-<script src="https://facilinsumos.com/sistemas/AdminDash/webapp/assets/js/ventas_anadirRequerimientos.js"></script>
+<!-- jquery JS -->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- JS SELECT2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- JS TABULATOR -->
+    <link
+    href="https://unpkg.com/tabulator-tables@6.2.5/dist/css/tabulator.min.css"
+    rel="stylesheet"/>
+
+    <script
+    type="text/javascript"
+    src="https://unpkg.com/tabulator-tables@6.2.5/dist/js/tabulator.min.js"
+    ></script>
+
+    <!-- JS SWEETALERT 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+    <!-- Bootstrap JS -->
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--Global functions -->
+    <script src="../assets/js/tablas.js"></script><script src="../assets/js/ventas_anadirRequerimientos.js"></script>
 </head>
 
 <body>
     <div id="nav-group">
-        <nav id="sidebar" class="nav-group-item"><a id="logo-holder" href="https://facilinsumos.com/sistemas/AdminDash/webapp/Inicio.html"><img id="logo-collapsed" class="logo" src="https://facilinsumos.com/sistemas/AdminDash/webapp/assets/img/logo-collapsed.png" alt="Logo Collapsed"><img id="logo-expanded" class="logo" src="https://facilinsumos.com/sistemas/AdminDash/webapp/assets/img/logo-expanded-inverted.png" alt="Logo Expanded"></a>
+        <nav id="sidebar" class="nav-group-item"><a id="logo-holder" href="Inicio.html"><img id="logo-collapsed" class="logo" src="../assets/img/logo-collapsed.png" alt="Logo Collapsed"><img id="logo-expanded" class="logo" src="../assets/img/logo-expanded-inverted.png" alt="Logo Expanded"></a>
             <ul class="nav">
-                <li class="nav-item"><a class="nav-link active" href="https://facilinsumos.com/sistemas/AdminDash/webapp/Requerimientos.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-rocket">
+                <li class="nav-item"><a class="nav-link active" href="Requerimientos.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-rocket">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3"></path>
                             <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3"></path>
                             <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
                         </svg><span class="menu-text">Requerimientos</span></a></li>
-                <li class="nav-item"><a class="nav-link active" href="https://facilinsumos.com/sistemas/AdminDash/webapp/Administracion.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-report-money">
+                <li class="nav-item"><a class="nav-link active" href="Administracion.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-report-money">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path>
                             <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
                             <path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"></path>
                             <path d="M12 17v1m0 -8v1"></path>
                         </svg><span class="menu-text"> Administración</span></a></li>
-                <li class="nav-item"><a class="nav-link active" href="https://facilinsumos.com/sistemas/AdminDash/webapp/Ventas.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-pig-money">
+                <li class="nav-item"><a class="nav-link active" href="Ventas.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-pig-money">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M15 11v.01"></path>
                             <path d="M5.173 8.378a3 3 0 1 1 4.656 -1.377"></path>
                             <path d="M16 4v3.803a6.019 6.019 0 0 1 2.658 3.197h1.341a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-1.342c-.336 .95 -.907 1.8 -1.658 2.473v2.027a1.5 1.5 0 0 1 -3 0v-.583a6.04 6.04 0 0 1 -1 .083h-4a6.04 6.04 0 0 1 -1 -.083v.583a1.5 1.5 0 0 1 -3 0v-2l0 -.027a6 6 0 0 1 4 -10.473h2.5l4.5 -3h0z"></path>
                         </svg><span class="menu-text"> Ventas</span></a></li>
-                <li class="nav-item"><a class="nav-link active" href="https://facilinsumos.com/sistemas/AdminDash/webapp/Compras.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-shopping-cart-bolt">
+                <li class="nav-item"><a class="nav-link active" href="Compras.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-shopping-cart-bolt">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
                             <path d="M13.5 17h-7.5v-14h-2"></path>
                             <path d="M6 5l14 1l-.858 6.004m-2.642 .996h-10.5"></path>
                             <path d="M19 16l-2 3h4l-2 3"></path>
                         </svg><span class="menu-text"> Compras</span></a></li>
-                <li class="nav-item"><a class="nav-link active" href="https://facilinsumos.com/sistemas/AdminDash/webapp/Logistica.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-truck-delivery">
+                <li class="nav-item"><a class="nav-link active" href="Logistica.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-truck-delivery">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
                             <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
                             <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"></path>
                             <path d="M3 9l4 0"></path>
                         </svg><span class="menu-text"> Logística</span></a></li>
-                <li class="nav-item"><a class="nav-link active" href="https://lookerstudio.google.com/reporting/3a18945d-ae7e-4531-8a00-c49a01fb8ef3" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chart-bar">
+                <li class="nav-item"><a class="nav-link active" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-chart-bar">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M3 12m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
                             <path d="M9 8m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
@@ -67,12 +90,12 @@
                         </svg><span class="menu-text"> Resultados</span></a></li>
             </ul>
             <ul class="nav">
-                <li class="nav-item"><a class="nav-link active" href="https://chat.whatsapp.com/EvCiP54tulY3dvOj6gf7j9" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-settings">
+                <li class="nav-item"><a class="nav-link active" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-settings">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
                             <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
                         </svg><span class="menu-text"> Configuración</span></a></li>
-                <li class="nav-item"><a class="nav-link active" href="https://chat.whatsapp.com/EvCiP54tulY3dvOj6gf7j9" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-help">
+                <li class="nav-item"><a class="nav-link active" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-help">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
                             <path d="M12 17l0 .01"></path>
@@ -91,7 +114,7 @@
     <div id="page-wraper">
         <div id="top-menu" class="buttons">
             <h3 id="page-title">Ventas: Añadir requerimiento</h3>
-            <div class="btn-group" role="group"><a class="btn" role="button" href="https://facilinsumos.com/sistemas/AdminDash/webapp/Ventas.html">Cancelar</a><a class="btn btn-primary" role="button" id="btnGuardar">Guardar</a></div>
+            <div class="btn-group" role="group"><a class="btn" role="button" href="Ventas.html">Cancelar</a><a class="btn btn-primary" role="button" id="btnGuardar">Guardar</a></div>
         </div>
         <div id="content" class="content-column">
             <div class="tarjeta">
