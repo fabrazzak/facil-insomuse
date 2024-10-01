@@ -1,4 +1,4 @@
-#btnHistorial {
+.btnHistorial {
   height: 3rem;
   width: 3rem;
   background-color: var(--bs-primary);
